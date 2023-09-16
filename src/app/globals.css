@@ -8,3 +8,23 @@
     }
 }
 
+
+.custom-shape-divider-top-1694848176 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1694848176 svg {
+    position: relative;
+    display: block;
+    width: calc(300% + 1.3px);
+    height: 300px;
+}
+
+.home-hover-image:hover div {
+    opacity: 1
+}

@@ -1,0 +1,39 @@
+
+h1 {
+    color: inherit;
+    font-size: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h3 {
+    color: inherit;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+
+}
+
+p {
+    color: inherit;
+    text-align: center;
+}
+
+ol {
+    color: inherit;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+li {
+    color: inherit;
+    text-align: center;
+}
+
+strong {
+    color: inherit;
+}
