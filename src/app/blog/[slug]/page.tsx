@@ -38,7 +38,7 @@ export default async function Blog({ params }) {
 
     return (
         <div className="min-h-screen dark:bg-gray-800 w-full">
-            <div className="max-w-screen-xl text-center mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+            <div className="blog-post-container max-w-screen-2xl text-center mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
                 <h1>{data.title}</h1>
                 <div className="flex flex-col gap-6">
                 <PortableText value={data.body} components={ptComponents} />
