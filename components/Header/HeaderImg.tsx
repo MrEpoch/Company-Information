@@ -8,7 +8,6 @@ import { useEffect, useState } from "react";
 
 export default function HeaderImg() {
     const { theme } = useTheme();
-    console.log(theme);
     const [image, setImage] = useState<any>(LogoDark); 
     useEffect(() => {
         setImage(theme === "dark" ? LogoDark : Logo);

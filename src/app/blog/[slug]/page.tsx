@@ -5,13 +5,13 @@ import { client } from "../../../../sanity/lib/client";
 import Image from "next/image";
 import "./style.css";
 
-function urlFor(source) {
+function urlFor(source: string) {
   return ImageUrlBuilder(client).image(source)
 }
 
 const ptComponents = {
   types: {
-    image: ({ value }) => {
+      image: ({ value }: { value: any }) => {
       if (!value?.asset?._ref) {
         return null
       }
@@ -21,7 +21,7 @@ const ptComponents = {
                 className="rounded-lg"
               alt={value.alt || ' '}
               src={urlFor(value.asset._ref).url().toString()}
-              width={600}
+              width={800}
               height={400}
               />
           </div>
@@ -30,18 +30,16 @@ const ptComponents = {
   }
 }
 
-
-export default async function Blog({ params }) {
+export default async function Blog({ params }: { params: { slug: string } }) {
     const slug = params.slug;
     const { data } = await getPost(slug);
-    console.log(data.body[data.body.length -1].children);
 
     return (
         <div className="min-h-screen dark:bg-gray-800 w-full">
             <div className="blog-post-container max-w-screen-2xl text-center mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
                 <h1>{data.title}</h1>
-                <div className="flex flex-col gap-6">
-                <PortableText value={data.body} components={ptComponents} />
+                <div className="flex flex-col gap-[4rem]">
+                    <PortableText value={data.body} components={ptComponents} />
                 </div>
             </div>
         </div>
