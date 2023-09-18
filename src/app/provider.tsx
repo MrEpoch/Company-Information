@@ -1,7 +1,12 @@
 'use client'
 
-import { ThemeProvider } from 'next-themes'
+import { ThemeProvider, useTheme } from 'next-themes'
 
 export function Providers({ children }) {
-  return <ThemeProvider attribute="class">{children}</ThemeProvider>
+    const { theme, setTheme } = useTheme();
+    if (theme !== 'dark' && theme !== 'light') {
+        setTheme('dark')
+    }
+
+    return <ThemeProvider attribute="class">{children}</ThemeProvider>
 }

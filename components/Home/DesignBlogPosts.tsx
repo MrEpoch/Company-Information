@@ -31,10 +31,10 @@ export default function DesignBlog() {
                 <div className="flex flex-col gap-7 justify-center h-full w-full mt-[10rem] items-center ">
                     
                     <Link href="/blog" className="inline-flex justify-center 
-      items-center py-5 px-10 text-base font-medium text-center text-gray-900 
-      rounded hover:bg-gray-100 bg-black 
-      focus:ring-4 focus:ring-gray-100 dark:text-white 
-      dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+        items-center py-5 px-10 text-base font-medium text-center 
+      rounded  bg-black
+      focus:ring-4 text-white 
+      border-gray-700 hover:bg-gray-700 focus:ring-gray-800">
                         See Blog
                     </Link>  
                 </div>
