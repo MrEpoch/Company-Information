@@ -1,9 +1,9 @@
 import { PortableText } from "@portabletext/react";
-import { getAccomplishedOne, getPost } from "../../../../sanity/sanity-utils";
+import { getAccomplishedOne } from "../../../../sanity/sanity-utils";
 import ImageUrlBuilder from "@sanity/image-url";
 import { client } from "../../../../sanity/lib/client";
 import Image from "next/image";
-import "./style.css";
+import "./accomplished.css";
 import { redirect } from "next/navigation";
 
 function urlFor(source: string) {
@@ -33,7 +33,7 @@ const ptComponents = {
 
 export default async function Blog({ params }: { params: { slug: string } }) {
     const slug = params.slug;
-    const { data } = await getPost(slug);
+    const { data } = await getAccomplishedOne(slug);
     if (!data) throw redirect("/");
     return (
         <div className="min-h-screen dark:bg-gray-800 w-full">

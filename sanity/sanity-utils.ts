@@ -7,6 +7,7 @@ export async function getPosts() {
             _id,
             _createAt,
             title,
+            "image": mainImage,
             "slug": slug.current,
             body
         }`
@@ -45,7 +46,7 @@ export async function getAccomplishedOne(slug: string) {
             _id,
             _createAt,
             title,
-            mainImage,
+            "image": mainImage,            
             "slug": slug.current,
             body
         }[0]`,
@@ -72,6 +73,7 @@ export async function getPost(slug: string) {
             _id,
             _createAt,
             title,
+            "image": mainImage,            
             "slug": slug.current,
             body
         }[0]`,
