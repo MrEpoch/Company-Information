@@ -15,6 +15,48 @@ export async function getPosts() {
     return { data }
 }
 
+export async function getAccomplished() {
+    const data = await client.fetch(
+        groq`*[_type == "accomplished"]{
+            _id,
+            _createAt,
+            title,
+            "image": mainImage,
+            "slug": slug.current,
+                body
+        }`
+    )
+
+    return { data }
+}
+
+export async function getAccomplishedSlugs() {
+    const slugs = await client.fetch(
+        groq`*[_type == "accomplished"]{
+            slug
+        }`
+    )
+    return { data: slugs }
+}
+
+export async function getAccomplishedOne(slug: string) {
+    const data = await client.fetch(
+        groq`*[_type == "accomplished" && slug.current == $slug]{
+            _id,
+            _createAt,
+            title,
+            mainImage,
+            "slug": slug.current,
+            body
+        }[0]`,
+        {
+            slug: slug
+        }
+    )
+
+    return { data }
+}
+
 export async function getPostSlugs() {
     const slugs = await client.fetch(
         groq`*[_type == "post"]{
@@ -22,7 +64,7 @@ export async function getPostSlugs() {
         }`
     )
     return { data: slugs }
-}
+};
 
 export async function getPost(slug: string) {
     const data = await client.fetch(

@@ -7,8 +7,10 @@ export default async function Page() {
     return (
         <div className="min-h-screen w-full dark:bg-gray-800">
             <h1>Blog Posts</h1>
-            {data.map((post: any) => {
-                <CardInfo info={post} />                
+            {data.map((post: any, i:number) => {
+                return (
+                    <CardInfo key={i} info={post} />
+                ) 
             })}
         </div>
     )
