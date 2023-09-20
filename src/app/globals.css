@@ -28,3 +28,7 @@
 .home-hover-image:hover div {
     opacity: 1
 }
+
+.biggify:hover > * {
+    transform: scale(1.3)
+}
