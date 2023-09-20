@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function Info({ data, ind }) {
+export default function Info({ data, ind }: { data: any, ind: number }) {
     return (
         <div className={`w-full h-full items-center flex ${ind % 2 === 0 ? 'xl:flex-row' : 'xl:flex-row-reverse'} flex-col xl:gap-5 gap-[5rem]`}>
             <div className="w-1/2 mr-10 mt-[5rem] max-w-[800px] aspect-video bg-lime-500 h-full">

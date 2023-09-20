@@ -1,5 +1,5 @@
 import { PortableText } from "@portabletext/react";
-import { getAccomplishedOne, getPost } from "../../../../sanity/sanity-utils";
+import { getPost } from "../../../../sanity/sanity-utils";
 import ImageUrlBuilder from "@sanity/image-url";
 import { client } from "../../../../sanity/lib/client";
 import Image from "next/image";

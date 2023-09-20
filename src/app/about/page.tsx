@@ -1,7 +1,6 @@
 import WhoWeAre from "@/assets/WhoWeAre.webp";
 import AloeVera from "@/assets/AloeVera.webp";
 import PlasticBottle from "@/assets/PlasticBottle.webp";
-import Image from "next/image";
 import Info from "./AboutInfo";
 
 const data = [
