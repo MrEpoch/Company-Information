@@ -10,7 +10,7 @@ function urlFor(source: string) {
 
 export default function CardInfo({ info, site="blog" }: { info: any, site?: string }) {
     return (
-        <a href={`/${site}/${info.slug}`} className="aspect-[7/3] 
+        <a href={`/${site}/${info.slug}`} className="aspect-[7/3] w-full 
         max-w-[400px] bg-gray-100 dark:bg-gray-700 text-white flex relative transition duration-300
         flex-col min-h-[180px] sm:min-h-[300px] hover:brightness-75">
         <h3 className="absolute bg-black/30 p-6 bottom-0 w-full text-center">{info.title}</h3>

@@ -14,7 +14,7 @@ export default function DesignBlog() {
                 </svg>
             </div>
             <div className="h-full w-full mt-[20rem] flex flex-col max-w-screen-xl px-4 mx-auto">
-                <p className="text-center mb-[10rem] text-xl sm:text-4xl font-extrabold leading-none text-gray-900 dark:text-white">
+                <p className="sm:mb-[10rem] mb-[4rem] sm:text-center text-xl sm:text-4xl font-extrabold leading-none text-gray-900 dark:text-white">
                     We are proud to write about what we accomplish through our blog, check it out!
                 </p>
 
