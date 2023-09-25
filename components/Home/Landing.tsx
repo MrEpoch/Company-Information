@@ -1,10 +1,11 @@
+import Image from "next/image";
 import Link from "next/link";
-
+import Tree from "@/assets/trees.svg";
 
 export default function Landing() {
     return (
-            <section className="h-full mt-[12rem] w-full flex items-center flex-col min-h-screen">
-                <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
+        <section className="h-full gap-[3rem] mt-[9rem] sm:mt-[12rem] w-full flex items-center flex-col min-h-screen">
+                <div className="sm:py-8 px-4 flex flex-col items-center mx-auto max-w-screen-xl text-center lg:py-16">
                     <h1 className="mb-12 text-2xl sm:text-4xl font-extrabold tracking-tight leading-none 
           text-gray-900 md:text-5xl lg:text-6xl dark:text-white">We Preserve, Protect and Restore</h1>
       <p className="mb-8 text-sm sm:text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 
@@ -27,6 +28,7 @@ export default function Landing() {
                         </Link>  
                     </div>
                 </div>
+                <Image src={Tree} alt="logo" />
             </section>
 
     )
