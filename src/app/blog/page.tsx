@@ -6,12 +6,13 @@ export default async function Page() {
 
     return (
         <div className="min-h-screen w-full dark:bg-gray-800">
-            <h1>Blog Posts</h1>
+            <div className="max-w-screen-2xl flex flex-wrap gap-5 mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
             {data.map((post: any, i:number) => {
                 return (
                     <CardInfo key={i} info={post} />
                 ) 
             })}
+            </div>
         </div>
     )
 }
