@@ -36,7 +36,7 @@ export default async function Blog({ params }: { params: { slug: string } }) {
     const { data } = await getPost(slug);
     if (!data) throw redirect("/");
     return (
-        <div className="min-h-screen dark:bg-gray-800 w-full">
+        <div className="min-h-screen dark:bg-darkmode-500 w-full">
             <div className="blog-post-container flex flex-col items-center 
         max-w-screen-md text-center mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
                 <h1 className="w-full text-3xl text-center">{data.title}</h1>

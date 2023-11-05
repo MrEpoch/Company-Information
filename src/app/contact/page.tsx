@@ -2,7 +2,7 @@ import CopyItem from "@/components/CopyItem";
 
 export default function Page() {
     return (
-        <div className="min-h-screen py-[4rem] w-full dark:bg-gray-800">
+        <div className="min-h-screen py-[4rem] w-full dark:bg-darkmode-500">
             <div className="flex flex-col h-full w-full min-h-screen pt-14">
                 <div className="w-full h-full flex flex-wrap gap-6 items-center justify-center">
                     <CopyItem value="dev@stencukpage.com">
