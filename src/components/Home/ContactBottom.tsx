@@ -5,12 +5,12 @@ export default function ContactBottom() {
   return (
     <section className="min-h-screen py-[7rem]  relative w-full flex flex-col items-center">
       <div className="py-8 px-4 items-center flex flex-col gap-4 mx-auto max-w-screen-xl h-full text-center lg:py-16">
-        <h1
+        <h2
           className="text-4xl mb-[10rem] my-[5rem] font-extrabold tracking-tight leading-none 
       text-gray-900 md:text-5xl lg:text-6xl dark:text-white"
         >
           Contact Us
-        </h1>
+        </h2>
         <Link
           href="/contact"
           className="hover:translate-y-[5px] dark:bg-lime-400 hover:translate-x-[5px] duration-300 transition w-64 h-64 bg-lime-300 rounded flex items-center justify-center"

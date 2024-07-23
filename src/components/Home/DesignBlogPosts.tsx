@@ -1,7 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import GreenHands from "@/assets/PlantInHands.webp";
-import GreenThing from "@/assets/GreenThing.webp";
 
 export default function DesignBlog() {
   return (
@@ -42,8 +40,8 @@ export default function DesignBlog() {
           >
             <div className="absolute opacity-0 flex text-2xl items-center justify-center h-full w-full"></div>
             <Image
-              src={GreenHands}
-              className="object-cover hover:brightness-75 aspect-video h-full w-full max-w-[500px]"
+              src={"/assets/PlantInHands.webp"}
+              className="object-cover hover:brightness-75 aspect-video rounded h-full w-full max-w-[500px]"
               alt="logo"
               width={500}
               height={200}
@@ -54,8 +52,8 @@ export default function DesignBlog() {
             href="/blog/saving-dry-areas"
           >
             <Image
-              src={GreenThing}
-              className="object-cover aspect-video w-full max-w-[500px]"
+              src={"/assets/GreenThing.webp"}
+              className="object-cover aspect-video w-full max-w-[500px] rounded"
               alt="logo"
               width={500}
               height={200}

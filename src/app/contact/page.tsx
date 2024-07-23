@@ -1,9 +1,9 @@
-import CopyItem from "@/components/CopyItem";
+import Faq from "@/components/Contact/Faq";
 
 export default function Page() {
   return (
-    <div className="min-h-screen py-[4rem] w-full dark:bg-darkmode-500">
-      <div className="mt-6">
+    <div className="min-h-screen py-16 w-full dark:bg-darkmode-500">
+      <div className="max-w-screen-xl flex-col gap-16 justify-between items-center flex mx-auto px-4 sm:px-6 lg:px-8 min-h-full ">
         <div className="grid sm:grid-cols-2 items-start gap-14 p-8 mx-auto max-w-4xl dark:bg-darkmode-400 bg-white shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] rounded-md font-[sans-serif]">
           <div>
             <h1 className="text-gray-800 text-3xl font-extrabold dark:text-white">
@@ -112,6 +112,7 @@ export default function Page() {
             </button>
           </form>
         </div>
+        <Faq />
       </div>
     </div>
   );

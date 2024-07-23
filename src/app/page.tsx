@@ -1,5 +1,6 @@
 import ContactBottom from "@/components/Home/ContactBottom";
 import DesignBlog from "@/components/Home/DesignBlogPosts";
+import Features from "@/components/Home/Features";
 import Landing from "@/components/Home/Landing";
 
 export default async function Home() {
@@ -25,6 +26,7 @@ export default async function Home() {
           </svg>
         </div>
       </div>
+      <Features />
       <ContactBottom />
     </div>
   );

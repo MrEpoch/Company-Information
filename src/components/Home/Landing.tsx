@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import Tree from "@/assets/trees.svg";
 
 export default function Landing() {
   return (
@@ -55,7 +54,7 @@ export default function Landing() {
           </Link>
         </div>
       </div>
-      <Image src={Tree} alt="logo" />
+      <Image width={800} height={400} src={"/assets/trees.svg"} alt="logo" />
     </section>
   );
 }

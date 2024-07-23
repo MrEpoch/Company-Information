@@ -7,6 +7,8 @@ export default function Info({ data, ind }: { data: any; ind: number }) {
     >
       <div className="sm:w-1/2 w-[90%] mr-10 mt-[5rem] max-w-[800px] aspect-video bg-lime-500 h-full">
         <Image
+          width={800}
+          height={400}
           src={data.image}
           alt="Who We Are"
           className={`translate-y-5 rounded ${ind % 2 === 0 ? "-rotate-6" : "rotate-6"} w-full

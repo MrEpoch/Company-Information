@@ -1,11 +1,8 @@
-import WhoWeAre from "@/assets/WhoWeAre.webp";
-import AloeVera from "@/assets/AloeVera.webp";
-import PlasticBottle from "@/assets/PlasticBottle.webp";
 import Info from "./AboutInfo";
 
 const data = [
   {
-    image: PlasticBottle,
+    image: "/assets/PlasticBottle.webp",
     Text: `Our shared dedication to addressing pressing environmental concerns is the driving force behind our collective efforts. We 
         meticulously investigate the intricate cause-and-effect relationships associated with our actions and those of fellow individuals who 
         share our commitment to safeguarding our planet. Within our team, 
@@ -13,13 +10,13 @@ const data = [
         fostering a culture of conscientiousness that guides us in our pursuit of a more sustainable and ecologically responsible future.`,
   },
   {
-    image: AloeVera,
+    image: "/assets/AloeVera.webp",
     Text: `We are group of passionate people caring about environmental issues which concerns this planet. We
                 study cause and effect of our and actions of other people concerned about same issue. Our team is full
         of careful people which hold their values in high regard.`,
   },
   {
-    image: WhoWeAre,
+    image: "/assets/WhoWeAre.webp",
     Text: `We believe that understanding the root causes and consequences of environmental challenges 
         is crucial for effective advocacy and action. With a diverse team of individuals who place a premium on their ethical values, 
         our commitment to this cause is unwavering. We work tirelessly to not only raise awareness about environmental issues but also 
