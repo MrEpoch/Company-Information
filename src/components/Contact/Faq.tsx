@@ -2,7 +2,13 @@ import React from "react";
 
 export default function Faq() {
   return (
-    <div className="w-full" id="faq">
+    <section
+      id="faq"
+      className="min-h-screen w-full flex items-center gap-8 flex-col justify-center"
+    >
+      <h2 className="text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white py-8">
+        Frequently asked questions
+      </h2>
       <div className="space-y-4">
         <details
           className="group border-s-4 border-lime-500 bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden"
@@ -36,9 +42,7 @@ export default function Faq() {
             distinctio corporis earum similique!
           </p>
         </details>
-        <details
-          className="group border-s-4 border-lime-500 bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden"
-        >
+        <details className="group border-s-4 border-lime-500 bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden">
           <summary className="flex cursor-pointer items-center justify-between gap-1.5">
             <h2 className="text-lg font-medium text-gray-900">
               Lorem ipsum dolor sit amet consectetur adipisicing?
@@ -67,7 +71,6 @@ export default function Faq() {
             distinctio corporis earum similique!
           </p>
         </details>
-
 
         <details className="group border-s-4 border-lime-500 bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden">
           <summary className="flex cursor-pointer items-center justify-between gap-1.5">
@@ -99,6 +102,6 @@ export default function Faq() {
           </p>
         </details>
       </div>
-    </div>
+    </section>
   );
 }

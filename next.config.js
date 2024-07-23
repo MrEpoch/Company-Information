@@ -4,13 +4,11 @@ const nextConfig = {
     domains: ["cdn.sanity.io"],
   },
   typescript: {
-    ignoreBuildErrors: true
+    ignoreBuildErrors: true,
   },
   eslint: {
     ignoreDuringBuilds: true,
   },
-
-
 };
 
 module.exports = nextConfig;

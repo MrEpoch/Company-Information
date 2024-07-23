@@ -35,25 +35,24 @@ export default function DesignBlog() {
 
         <div className="h-full w-full flex-col md:flex-row flex gap-[3rem] items-center justify-center">
           <Link
-            className="hover:brightness-75 home-hover-image relative hover:translate-y-[-5px] transition duration-300"
+            className="hover:brightness-75 rounded home-hover-image max-w-[500px] w-full relative bg-gray-100 h-72 hover:translate-y-[-5px] transition duration-300"
             href="/blog/how-we-protect-nature"
           >
-            <div className="absolute opacity-0 flex text-2xl items-center justify-center h-full w-full"></div>
             <Image
               src={"/assets/PlantInHands.webp"}
-              className="object-cover hover:brightness-75 aspect-video rounded h-full w-full max-w-[500px]"
+              className="object-cover hover:brightness-75 aspect-video rounded h-full w-full"
               alt="logo"
               width={500}
               height={200}
             />
           </Link>
           <Link
-            className="hover:brightness-75 hover:translate-y-[-5px] transition duration-300"
-            href="/blog/saving-dry-areas"
+            className="hover:brightness-75 rounded home-hover-image max-w-[500px] w-full relative bg-gray-100 h-72 hover:translate-y-[-5px] transition duration-300"
+            href="/blog/how-we-protect-nature"
           >
             <Image
               src={"/assets/GreenThing.webp"}
-              className="object-cover aspect-video w-full max-w-[500px] rounded"
+              className="object-cover hover:brightness-75 aspect-video rounded h-full w-full"
               alt="logo"
               width={500}
               height={200}

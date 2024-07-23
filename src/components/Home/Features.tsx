@@ -7,7 +7,7 @@ export default function Features() {
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
           <div className="text-center mb-20">
-            <h2 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">
+            <h2 className="text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white py-8">
               See our story
             </h2>
             <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">
@@ -44,7 +44,7 @@ export default function Features() {
                 </p>
                 <Link
                   href="/about"
-                  className="mt-3 text-lime-500 inline-flex items-center"
+                  className="mt-3 text-lime-500 inline-flex group items-center"
                 >
                   Learn More
                   <svg
@@ -53,7 +53,7 @@ export default function Features() {
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="2"
-                    className="w-4 h-4 ml-2"
+                    className="w-4 h-4 ml-2 group-hover:translate-x-1 transition"
                     viewBox="0 0 24 24"
                   >
                     <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -88,7 +88,7 @@ export default function Features() {
                 </p>
                 <Link
                   href="/about"
-                  className="mt-3 text-lime-500 inline-flex items-center"
+                  className="mt-3 text-lime-500 inline-flex group items-center"
                 >
                   Learn More
                   <svg
@@ -97,12 +97,12 @@ export default function Features() {
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="2"
-                    className="w-4 h-4 ml-2"
+                    className="w-4 h-4 ml-2 group-hover:translate-x-1 transition"
                     viewBox="0 0 24 24"
                   >
                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                   </svg>
-                </Link>
+                </Link>{" "}
               </div>
             </div>
             <div className="p-4 md:w-1/3 flex flex-col text-center items-center">
@@ -131,7 +131,7 @@ export default function Features() {
                 </p>
                 <Link
                   href="/about"
-                  className="mt-3 text-lime-500 inline-flex items-center"
+                  className="mt-3 text-lime-500 inline-flex group items-center"
                 >
                   Learn More
                   <svg
@@ -140,7 +140,7 @@ export default function Features() {
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="2"
-                    className="w-4 h-4 ml-2"
+                    className="w-4 h-4 ml-2 group-hover:translate-x-1 transition"
                     viewBox="0 0 24 24"
                   >
                     <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -149,9 +149,14 @@ export default function Features() {
               </div>
             </div>
           </div>
-          <button className="flex mx-auto mt-16 text-white bg-lime-500 border-0 py-2 px-8 focus:outline-none hover:bg-lime-600 rounded text-lg">
-            O nás
-          </button>
+          <div className="py-8 my-8 flex justify-center">
+            <Link
+              href="/about"
+              className="hover:translate-y-1 transition inline-flex w-fit justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded bg-lime-500 hover:bg-lime-500-foreground focus:ring-4 focus:ring-lime-500 dark:focus:ring-lime-500"
+            >
+              About us
+            </Link>
+          </div>
         </div>
       </section>
     </div>
