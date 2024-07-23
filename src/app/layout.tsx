@@ -1,7 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { Providers } from "./provider";
 import Header from "./Header";
 import Footer from "./Footer";
 
@@ -20,13 +19,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Providers>
           <main className="min-h-screen w-full dark:bg-darkmode-500">
             <Header />
             {children}
             <Footer />
           </main>
-        </Providers>
       </body>
     </html>
   );
