@@ -31,14 +31,18 @@ const ptComponents = {
   },
 };
 
-export default async function Blog({ params }: { params: { slug: string } }) {
+export default async function Accomplished({
+  params,
+}: {
+  params: { slug: string };
+}) {
   const slug = params.slug;
   const { data } = await getAccomplishedOne(slug);
   if (!data) throw redirect("/");
   return (
     <div className="min-h-screen dark:bg-darkmode-500 w-full">
       <div
-        className="blog-post-container flex flex-col items-center 
+        className="blog flex flex-col items-center 
         max-w-screen-md text-center mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8"
       >
         <h1 className="w-full text-3xl text-center">{data.title}</h1>
@@ -49,7 +53,7 @@ export default async function Blog({ params }: { params: { slug: string } }) {
           width={800}
           height={400}
         />
-        <div className="flex blog-body flex-col gap-[4rem]">
+        <div className="flex blog flex-col gap-[4rem]">
           <PortableText value={data.body} components={ptComponents} />
         </div>
       </div>

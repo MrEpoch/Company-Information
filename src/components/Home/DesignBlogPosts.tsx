@@ -36,7 +36,7 @@ export default function DesignBlog() {
         <div className="h-full w-full flex-col md:flex-row flex gap-[3rem] items-center justify-center">
           <Link
             className="hover:brightness-75 rounded home-hover-image max-w-[500px] w-full relative bg-gray-100 h-72 hover:translate-y-[-5px] transition duration-300"
-            href="/blog/how-we-protect-nature"
+            href="/accomplished/how-we-protect-nature"
           >
             <Image
               src={"/assets/PlantInHands.webp"}
@@ -48,7 +48,7 @@ export default function DesignBlog() {
           </Link>
           <Link
             className="hover:brightness-75 rounded home-hover-image max-w-[500px] w-full relative bg-gray-100 h-72 hover:translate-y-[-5px] transition duration-300"
-            href="/blog/how-we-protect-nature"
+            href="/accomplished/how-we-protect-nature"
           >
             <Image
               src={"/assets/GreenThing.webp"}
