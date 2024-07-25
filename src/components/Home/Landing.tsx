@@ -54,7 +54,14 @@ export default function Landing() {
           </Link>
         </div>
       </div>
-      <Image width={800} height={400} src={"/assets/trees.svg"} alt="logo" />
+      <Image
+        loading="eager"
+        priority
+        width={800}
+        height={400}
+        src={"/assets/trees.svg"}
+        alt="logo"
+      />
     </section>
   );
 }

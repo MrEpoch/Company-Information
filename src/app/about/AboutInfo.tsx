@@ -7,6 +7,8 @@ export default function Info({ data, ind }: { data: any; ind: number }) {
     >
       <div className="sm:w-1/2 w-[90%] mr-10 mt-[5rem] max-w-[800px] aspect-video bg-lime-500 h-full">
         <Image
+          loading="eager"
+          priority={ind === 0}
           width={800}
           height={400}
           src={data.image}

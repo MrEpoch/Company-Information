@@ -30,6 +30,7 @@ export default function CardInfo({
         className="rounded w-full h-full object-cover"
         src={urlFor(info.image.asset._ref).url().toString()}
         alt={info.title}
+        loading="lazy"
         width={800}
         height={400}
       />

@@ -3,7 +3,6 @@ import { getAccomplishedOne } from "../../../../sanity/sanity-utils";
 import ImageUrlBuilder from "@sanity/image-url";
 import { client } from "../../../../sanity/lib/client";
 import Image from "next/image";
-import "./accomplished.css";
 import { redirect } from "next/navigation";
 
 function urlFor(source: string) {
