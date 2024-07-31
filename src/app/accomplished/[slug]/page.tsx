@@ -16,7 +16,7 @@ const ptComponents = {
         return null;
       }
       return (
-        <div className="w-full my-[4rem] flex items-center justify-center">
+        <div className="w-full my-16 flex items-center justify-center">
           <Image
             className="rounded-lg"
             alt={value.alt || " "}
