@@ -1,6 +1,8 @@
 import { MetadataRoute } from "next";
+import { getAccomplished } from "../../sanity/sanity-utils";
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  const { data } = await getAccomplished();
   return [
     {
       url: "https://company-information-v5d7.vercel.app/",
@@ -26,5 +28,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.5,
     },
+    ...data.map((product: any) => ({
+      url: `https://company-information-v5d7.vercel.app/accomplished/${product.slug}`,
+      lastModified: product.publishedAt,
+      changeFrequency: "never",
+      priority: 0.5,
+    })),
   ];
 }
